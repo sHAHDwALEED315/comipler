@@ -1,0 +1,42 @@
+
+Program → (Declaration | Statement)*
+
+Declaration → Type IDENTIFIER ;
+
+Type → int | float | string | boolean | bool
+
+
+Statement →
+      Assignment
+    | PrintStmt
+    | Block
+    | IfStmt
+    | WhileStmt
+    | ExprStmt
+
+
+Assignment → IDENTIFIER = Expression ;
+PrintStmt  → print ( Expression ) ;
+
+Block → { Statement* }
+
+IfStmt → if ( Expression ) Block
+
+WhileStmt → while ( Expression ) Block
+
+ExprStmt → Expression ;
+
+
+Expression → Equality
+
+Equality → Comparison ( (== | !=) Comparison )*
+
+Comparison → Term ( ( > | < | >= | <= ) Term )*
+
+Term → Factor ( ( + | - ) Factor )*
+
+Factor → Unary ( ( * | / ) Unary )*
+
+Unary → NUMBER
+      | IDENTIFIER
+      | ( Expression )
