@@ -1,5 +1,13 @@
-int x=8;
-x = 4;
+int x = 5;
+int y = 10;
+int z = x + y;
+print(z);
 
-x = x + 10*x;
+if (x < y) {
+    int result = x * 2;
+    print(result);
+}
 
+while (x < y) {
+    x = x + 1;
+}

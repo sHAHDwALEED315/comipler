@@ -2,6 +2,7 @@
 
 A mini compiler built from scratch in Java **without any external libraries**.  
 It processes a custom programming language through three phases: **Lexing → Parsing → Semantic Analysis**.
+The material to build this Project is [compiler practical](https://peat-vision-dfb.notion.site/Compiler-Design-30e755b65aa4803eafb5feba83e47914)
 
 ---
 
